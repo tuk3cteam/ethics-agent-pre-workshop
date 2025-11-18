@@ -1,0 +1,9 @@
+streamlit
+httpx
+tenacity
+transformers
+torch
+accelerate
+uv
+matplotlib
+scipy
