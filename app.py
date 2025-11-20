@@ -13,13 +13,13 @@ st.title("🌍 Global AI Ethics Simulator")
 
 # ----------------------------- Configuration -----------------------------
 CULTURES = {
-    "북미":     {"emotion": 0.2, "social": 0.3, "identity": 0.3, "moral": 0.2},
-    "동아시아형":   {"emotion": 0.1, "social": 0.4, "identity": 0.25, "moral": 0.25},
-    "유럽형":  {"emotion": 0.1, "social": 0.3, "identity": 0.2, "moral": 0.4},
-    "남미형":   {"emotion": 0.3, "social": 0.3, "identity": 0.2, "moral": 0.2},
-    "중동형": {"emotion": 0.15, "social": 0.35, "identity": 0.25, "moral": 0.25},
-    "아프리카형": {"emotion": 0.15, "social": 0.4, "identity": 0.25, "moral": 0.2},
-    "남아시아형":  {"emotion": 0.15, "social": 0.3, "identity": 0.28, "moral": 0.27},
+    "North America":     {"emotion": 0.2, "social": 0.3, "identity": 0.3, "moral": 0.2},
+    "East Asia":   {"emotion": 0.1, "social": 0.4, "identity": 0.25, "moral": 0.25},
+    "Europe":  {"emotion": 0.1, "social": 0.3, "identity": 0.2, "moral": 0.4},
+    "South America":   {"emotion": 0.3, "social": 0.3, "identity": 0.2, "moral": 0.2},
+    "Middle East": {"emotion": 0.15, "social": 0.35, "identity": 0.25, "moral": 0.25},
+    "Africa": {"emotion": 0.15, "social": 0.4, "identity": 0.25, "moral": 0.2},
+    "South Asia":  {"emotion": 0.15, "social": 0.3, "identity": 0.28, "moral": 0.27},
 }
 
 scenario = st.sidebar.selectbox("시나리오", ["Classic Trolley", "Medical Triage", "AI Regulation"])
