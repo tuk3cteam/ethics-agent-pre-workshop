@@ -11,7 +11,7 @@ import httpx
 from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
 
 # ==================== App Config ====================
-st.set_page_config(page_title="윤리적 전환 (Ethical Crossroads)", page_icon="🧭", layout="centered")
+st.set_page_config(page_title="윤리적 전환 (Ethical Crossroads)1111111", page_icon="🧭", layout="centered")
 
 # ==================== Global Timeout ====================
 HTTPX_TIMEOUT = httpx.Timeout(
