@@ -253,11 +253,12 @@ SCENARIOS: List[Scenario] = [
             "B": "데이터 투명성을 위해, 외부에 도용 사실을 공개한다."
         },
         votes={"emotion":"B","social":"A","moral":"B","identity":"A"},
+        #혹시 BASE에 있는 기본값들? lives_saved 이런 값들을 바꾸어도 괜찮은지 여쭤보고 싶어요
         base={
-            "A": {"lives_saved":0, "lives_harmed":0, "fairness_gap":0.6, "rule_violation":0.60, "regret_risk":0.6},
-            "B": {"lives_saved":0, "lives_harmed":0, "fairness_gap":0.1, "rule_violation":0.20, "regret_risk":0.30},
+            "A": {"lives_saved":0, "lives_harmed":0, "fairness_gap":0.6, "rule_violation":0.80, "regret_risk":0.65},
+            "B": {"lives_saved":0, "lives_harmed":0, "fairness_gap":0.1, "rule_violation":0.20, "regret_risk":0.25},
         },
-        accept={"A":0.70, "B":0.30}
+        accept={"A":0.65, "B":0.35}
     ),
     Scenario(
         sid="S2",
@@ -276,10 +277,10 @@ SCENARIOS: List[Scenario] = [
         },
         votes={"emotion":"A","social":"B","moral":"B","identity":"B"},
         base={
-            "A": {"lives_saved":3, "lives_harmed":2, "fairness_gap":0.7, "rule_violation":0.65, "regret_risk":0.80},
-            "B": {"lives_saved":0, "lives_harmed":1, "fairness_gap":0.40, "rule_violation":0.20, "regret_risk":0.40},
+            "A": {"lives_saved":0, "lives_harmed":0, "fairness_gap":0.60, "rule_violation":0.50, "regret_risk":0.60},
+            "B": {"lives_saved":0, "lives_harmed":0, "fairness_gap":0.40, "rule_violation":0.10, "regret_risk":0.20},
         },
-        accept={"A":0.25, "B":0.75}
+        accept={"A":0.20, "B":0.80}
     ),
     Scenario(
         sid="S3",
@@ -296,10 +297,10 @@ SCENARIOS: List[Scenario] = [
         },
         votes={"emotion":"A","social":"B","moral":"A","identity":"B"},
         base={
-            "A": {"lives_saved":6, "lives_harmed":2, "fairness_gap":0.40, "rule_violation":0.30, "regret_risk":0.55},
-            "B": {"lives_saved":5, "lives_harmed":3, "fairness_gap":0.55, "rule_violation":0.15, "regret_risk":0.40},
+            "A": {"lives_saved":10, "lives_harmed":0, "fairness_gap":0.20, "rule_violation":0.80, "regret_risk":0.45},
+            "B": {"lives_saved":0, "lives_harmed":10, "fairness_gap":0.85, "rule_violation":0.10, "regret_risk":0.30},
         },
-        accept={"A":0.55, "B":0.65}
+        accept={"A":0.40, "B":0.60}
     ),
     Scenario(
         sid="S4",
