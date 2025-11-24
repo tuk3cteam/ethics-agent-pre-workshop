@@ -252,12 +252,12 @@ SCENARIOS: List[Scenario] = [
             "A": "대중의 신뢰를 위해 데이터 투명성을 위반하고, 데이터를 삭제한다.",
             "B": "데이터 투명성을 위해, 외부에 도용 사실을 공개한다."
         },
-        votes={"emotion":"A","social":"B","moral":"B","identity":"A"},
+        votes={"emotion":"B","social":"A","moral":"B","identity":"A"},
         base={
-            "A": {"lives_saved":5, "lives_harmed":1, "fairness_gap":0.35, "rule_violation":0.60, "regret_risk":0.40},
-            "B": {"lives_saved":0, "lives_harmed":5, "fairness_gap":0.50, "rule_violation":0.20, "regret_risk":0.60},
+            "A": {"lives_saved":0, "lives_harmed":0, "fairness_gap":0.6, "rule_violation":0.60, "regret_risk":0.6},
+            "B": {"lives_saved":0, "lives_harmed":0, "fairness_gap":0.1, "rule_violation":0.20, "regret_risk":0.30},
         },
-        accept={"A":0.70, "B":0.50}
+        accept={"A":0.70, "B":0.30}
     ),
     Scenario(
         sid="S2",
@@ -276,10 +276,10 @@ SCENARIOS: List[Scenario] = [
         },
         votes={"emotion":"A","social":"B","moral":"B","identity":"B"},
         base={
-            "A": {"lives_saved":5, "lives_harmed":1, "fairness_gap":0.65, "rule_violation":0.60, "regret_risk":0.70},
-            "B": {"lives_saved":0, "lives_harmed":5, "fairness_gap":0.45, "rule_violation":0.25, "regret_risk":0.50},
+            "A": {"lives_saved":3, "lives_harmed":2, "fairness_gap":0.7, "rule_violation":0.65, "regret_risk":0.80},
+            "B": {"lives_saved":0, "lives_harmed":1, "fairness_gap":0.40, "rule_violation":0.20, "regret_risk":0.40},
         },
-        accept={"A":0.35, "B":0.60}
+        accept={"A":0.25, "B":0.75}
     ),
     Scenario(
         sid="S3",
@@ -294,10 +294,10 @@ SCENARIOS: List[Scenario] = [
             "A": "공공 신뢰 확보를 위해 사고 정보를 정부 및 시민에게 투명하게 공개한다.",
             "B": "기업의 평판과 산업 발전을 위해 정보를 비공개로 유지한다."
         },
-        votes={"emotion":"A","social":"B","moral":"B","identity":"A"},
+        votes={"emotion":"A","social":"B","moral":"A","identity":"B"},
         base={
-            "A": {"lives_saved":7, "lives_harmed":3, "fairness_gap":0.45, "rule_violation":0.35, "regret_risk":0.45},
-            "B": {"lives_saved":6, "lives_harmed":4, "fairness_gap":0.30, "rule_violation":0.10, "regret_risk":0.35},
+            "A": {"lives_saved":6, "lives_harmed":2, "fairness_gap":0.40, "rule_violation":0.30, "regret_risk":0.55},
+            "B": {"lives_saved":5, "lives_harmed":3, "fairness_gap":0.55, "rule_violation":0.15, "regret_risk":0.40},
         },
         accept={"A":0.55, "B":0.65}
     ),
