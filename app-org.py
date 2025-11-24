@@ -284,7 +284,7 @@ SCENARIOS: List[Scenario] = [
     ),
     Scenario(
         sid="S3",
-        title="3단계: 자율주행의 책임 소재",
+        title="3단계: 자율주행의 책임 소재 -- 서울시의 법률은 어떻게 제정되었다. 어떤어떤 제도를 위반하였다.",
         setup=" 서울시의 스마트 모빌리티 기업 A사가 운영하던 완전 자율주행 버스에, 심야 운행 중 차선 이탈 사고가 발생하였다 "
               " 탑승객들은 경미한 부상만 입었으나, 초기 분석 결과 AI 판단 알고리즘의 결함 가능성이 제기되었다."
               " 사고 이후 A사 내부에서는 사고 정보를 어떻게 처리할지 두 가지 입장이 충돌하고 있다."
@@ -297,8 +297,8 @@ SCENARIOS: List[Scenario] = [
         },
         votes={"emotion":"A","social":"B","moral":"A","identity":"B"},
         base={
-            "A": {"lives_saved":10, "lives_harmed":0, "fairness_gap":0.20, "rule_violation":0.80, "regret_risk":0.45},
-            "B": {"lives_saved":0, "lives_harmed":10, "fairness_gap":0.85, "rule_violation":0.10, "regret_risk":0.30},
+            "A": {"lives_saved":10, "lives_harmed":0, "fairness_gap":0.20, "rule_violation":0.10, "regret_risk":0.45},
+            "B": {"lives_saved":0, "lives_harmed":10, "fairness_gap":0.85, "rule_violation":0.80, "regret_risk":0.30},
         },
         accept={"A":0.40, "B":0.60}
     ),
